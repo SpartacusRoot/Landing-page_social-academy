@@ -1,0 +1,169 @@
+
+@media all and (max-width: 600px) {
+
+
+  .syllabus-card {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #image-card {
+  max-width: 100% !important;
+  height: auto !important;
+  margin-top: 2% !important;
+}
+
+.list-title {
+  margin-top: 2% !important;
+  /* font-size: 4.5em !important; */
+  white-space: normal !important;
+}
+
+}
+
+
+
+
+
+
+  .flex-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .chip-container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .course-type {
+    flex: 0;
+    align-self: flex-end !important;
+  }
+
+
+  .title {
+    margin-top: 15px;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    line-height: 36px;
+    outline: rgb(82, 92, 101) none 0px;
+    text-decoration: none solid rgb(82, 92, 101);
+    /* color: #525c65; */
+    color: #f44336;
+  }
+
+  .flex-skill-text {
+    font-size: 1.17em;
+      margin:35px 35px 90px 35px;
+      color:#525c65;
+      font-family: 'Raleway', sans-serif;
+      /* font-weight: 400; */
+      height: 138px;
+      width: 90%;
+      line-height: 28px;
+      outline: rgb(82, 92, 101) none 0px;
+      text-decoration: none solid rgb(82, 92, 101);
+  }
+
+  .card {
+    /* box-shadow: 5px 15px 60px -15px rgba(10,9,9,1) !important; */
+    max-width: 90%;
+
+
+  }
+
+  .pannel {
+  width: 100%;
+
+  }
+
+
+
+
+
+.syllabus-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+#image-card {
+    flex-grow: 1;
+    max-width: 60%;
+    height: 350px;
+    width: 450px;
+    margin-top: -25px;
+}
+
+#text-card-title {
+   max-width: 90%;
+   font-family: 'Lato', sans-serif;
+   font-size: 1.5em;
+   font-weight: 300;
+   line-height: 36px;
+   text-align: left;
+   padding-bottom: 24px;
+   color: #f44336;
+}
+
+#text-card-subtitle {
+  font-family: 'Raleway', sans-serif;
+  max-width: 90%;
+  font-size: 1.12em;
+   font-weight: 400;
+   text-decoration: none solid rgb(82, 92, 101);
+   line-height: 24px;
+   color: #525c65;
+   text-align: left;
+}
+
+::ng-deep  .mat-list .mat-list-item{
+  height:initial!important;
+}
+
+.list-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8em !important;
+  color:  #2e3d49;
+  letter-spacing: 2px;
+line-height: 24px;
+outline: rgb(125, 151, 173) none 0px;
+text-decoration: none solid rgb(125, 151, 173);
+text-transform: uppercase;
+}
+
+.list-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.17em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #2e3d49;
+
+  font-weight: 400;
+  line-height: 32px;
+  outline: rgb(46, 61, 73) none 0px;
+  text-decoration: none solid rgb(46, 61, 73);
+}
+
+.list-text-title {
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* color: #2e3d49; */
+  color: #f44336;
+
+  line-height: 32px;
+  outline: rgb(46, 61, 73) none 0px;
+  text-decoration: none solid rgb(46, 61, 73);
+}
+
+
+.icon {
+  align-self: center;
+}

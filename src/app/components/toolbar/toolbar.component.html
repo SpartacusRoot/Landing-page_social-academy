@@ -1,0 +1,38 @@
+<mat-toolbar color="warn" class="mat-elevation-z8"></mat-toolbar>
+
+<div class="hero-container mat-elevation-z4">
+
+    <mat-card class="hero-image">
+        <mat-chip-list class="chip-container">
+            <mat-chip  color="warn" class="course-type" >ONLINE</mat-chip>
+        </mat-chip-list>
+              <h1 class="h1">Corso Cucina Online - CHEFuoriclasse</h1>
+              <h2 class="h2">Il Corso per Cuoco Professionista consigliato da Antonino Cannavacciuolo</h2>
+
+              <!-- <button mat-raised-button class="call-to-action-button" color="warn" (click)="openDialog()">scopri di più</button> -->
+              <div class="items-container" >
+        <mat-card class="list-container" >
+            <mat-list role="list" >
+              <mat-list-item *ngFor='let item of this.details'>
+
+                  <mat-icon mat-list-icon color="warn" >{{item.icon}}</mat-icon>
+                  <h4 mat-line class="list-title">{{item.title}}</h4>
+                  <p mat-line class="list-text">{{item.category}}</p>
+                  <mat-divider></mat-divider>
+              </mat-list-item>
+
+            </mat-list>
+            <mat-card-actions class="container-actions">
+            <button mat-raised-button color="warn" class="button-list">SCOPRI DI PIU</button>
+            </mat-card-actions>
+    </mat-card>
+    <!-- <button mat-raised-button class="call-to-action-button"   (click)="openDialog()" mat-icon-button> -->
+    <mat-icon (click)="openDialog()" class="call-to-action-button" color="warn">play_circle_outline</mat-icon>
+    <!-- </button> -->
+    </div>
+    </mat-card>
+</div>
+
+<div class="patners-container">
+  <img class="patner-image" src="../../../assets/partner_chefuoriclasse_spocialacademy.jpg">
+</div>

@@ -1,0 +1,20 @@
+<div class="container mat-elevation-z8" >
+<mat-card class="card-testimonials" *ngFor="let item of this.cardList">
+  <img  class="avatar" mat-card-image src={{item.image}} />
+  <mat-card-content>
+  <mat-card-title>
+  <h3 class="testimonials-name">
+  {{item.name}}
+  </h3>
+  </mat-card-title>
+  <mat-card-subtitle>
+  <!-- <h4>
+  {{item.proof}}
+  </h4> -->
+  </mat-card-subtitle>
+  </mat-card-content>
+  <mat-card-actions>
+
+  </mat-card-actions>
+</mat-card>
+</div>

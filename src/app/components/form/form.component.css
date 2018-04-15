@@ -1,0 +1,42 @@
+
+.outer-container {
+    margin: 60px 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.card > * {
+margin: 10px 5px 10px 5px;
+
+
+  }
+
+  .flex-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+
+
+  }
+
+
+ .card > * {
+   max-width: 80%;
+ }
+
+  /* .card:hover {
+     box-shadow: 5px 15px 60px -15px rgba(10,9,9,1) !important;
+
+
+
+  } */
+
+
+
+
+

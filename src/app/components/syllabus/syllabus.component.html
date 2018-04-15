@@ -1,0 +1,124 @@
+<div class="flex-container">
+  <mat-card class="card">
+    <mat-card-actions>
+      <mat-chip-list>
+        <mat-chip color="warn">Syllabus</mat-chip>
+      </mat-chip-list>
+    </mat-card-actions>
+    <div class="syllabus-card">
+      <mat-card-content>
+
+        <h2 id="text-card-title">
+          Diventa cuoco professionista con CHEFuoriclasse!
+        </h2>
+        <h4 id="text-card-subtitle">
+          Non aspettare che il tuo sogno si realizzi da solo: decidi tu di trasformare la passione in una professione appagante e di
+          successo optando per un corso completo e ben strutturato. Scegli il Corso CEF per Cuoco Professionista che nasce
+          dall’esperienza dei più grandi e autorevoli esperti del settore enogastronomico. Hai tutto ciò che serve: talento,
+          umiltà e dedizione sono infatti gli ingredienti necessari per osare avvicinarsi al mondo dell’arte in cucina. Tutto
+          il resto si può imparare. Attenzione, però: è proprio la qualità del “resto” che fa la differenza fra un amatore
+          e un professionista, fra un dilettante e un fuoriclasse e la scelta di un corso ben strutturato è molto importante.
+          Il tuo talento merita solo la preparazione migliore!
+        </h4>
+      </mat-card-content>
+      <img id="image-card" src="http://d1n7pvm7k6elmp.cloudfront.net/system/redactor_assets/pictures/490/DSC_4015.jpg">
+    </div>
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" class="pannel">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Descrizione corso
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <h2 class="list-text-title">
+          CHEFuoriclasse è l'unico corso di cucina professionale a distanza completo e ben strutturato:
+        </h2>
+        <mat-list>
+          <mat-list-item *ngFor='let item of this.syllabusList'>
+            <mat-icon color="warn" mat-list-icon>done</mat-icon>
+            <h3 class="list-title">
+              {{item.title}}
+            </h3>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+          <h3 class="list-text">
+            Conoscere perfettamente come scegliere e conservare gli alimenti, organizzare in modo efficiente la cucina in funzione del
+            menu, destreggiarsi fra tecniche, strumenti, preparazioni e realizzazioni e carpire i segreti del mestiere: ecco
+            i principi fondamentali che arricchiranno le tue competenze e che diventeranno le colonne portanti del tuo lavoro
+            in cucina. La tua arte avrà quindi delle solide basi che presto farai tue e che saranno il tuo continuo riferimento
+            per ideare e realizzare menu equilibrati, completi e adatti ad ogni occasione.
+          </h3>
+        </mat-list>
+        <!-- </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" class="pannel">
+        <mat-expansion-panel-header>
+          Chi ne beneficia
+        </mat-expansion-panel-header> -->
+        <h3 class="list-text">
+          Fai il salto di qualità! Il corso Chefuoriclasse ti aiuterà a:
+        </h3>
+        <mat-list>
+          <mat-list-item *ngFor='let item of this.syllabusList2'>
+            <mat-icon mat-list-icon color="warn">done</mat-icon>
+            <h3 class="list-title">
+              {{item.title}}
+            </h3>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+          <h4 class="list-text">
+            Grazie al Corso CEF per Cuoco Professionista potrai fare un vero e proprio salto di qualità, dalle pentole di casa a quelle
+            dei locali della ristorazione. Il Centro Europeo di Formazione ti fornirà la preparazione utile per la certificazione
+            HACCP (indispensabile per chiunque operi nel settore della ristorazione), ti sosterrà nella tua ricerca di una
+            struttura presso la quale effettuare uno stage per favorire il tuo inserimento nel mondo della cucina professionale,
+            al servizio di una struttura oppure come imprenditore nel caso in cui tu voglia avviare un ristorante tutto tuo.
+          </h4>
+        </mat-list>
+        <!-- </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>Non solo passione</mat-expansion-panel-header> -->
+        <h3 class="list-text-title">
+          Il tocco del maestro conferirà unicità alle tue grandi opere culinarie
+        </h3>
+        <h4 class="list-text">
+          La tua passione non si fermerà solo alla possibilità di imparare a cucinare bene. Una volta acquisite queste basi fondamentali,
+          percorrerai la strada per diventare presto un vero talento in grado di distinguersi per unicità e creatività: conferirai
+          il tocco del maestro alle tue opere d'arte culinaria! Per questo il Centro Europeo di Formazione ti svelerà i segreti
+          della tradizione della cucina italiana e internazionale che potrai reinterpretare per esaltare i tesori e le eccellenze
+          del territorio. Inoltre scoprirai la ricchezza di cucine alternative e d'avanguardia, oltre a quella ipoallergenica.
+          Potrai così ideare e proporre menu per occasioni speciali, capolavori di alta pasticceria, breakfast e happy hour.
+          Il tuo tocco da maestro sarà sempre più riconoscibile e il tuo palato diventerà davvero sopraffino: sarai infatti
+          in grado di eseguire correttamente anche le operazioni più delicate e riconoscere la reale riuscita di un piatto
+          grazie alla straordinaria ricchezza di una tale offerta formativa.
+        </h4>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card>
+</div>
+
+<div class="flex-container">
+  <mat-card class="card">
+    <mat-card-actions class="flex-container">
+      <mat-icon class="icon">restaurant</mat-icon>
+    </mat-card-actions>
+    <mat-card-content>
+      <h2 class="title">
+        Lo chef: una figura sempre più in voga e richiesta
+      </h2>
+      <h3 class="list-text">
+
+        Quella del Cuoco Professionista è una professione sempre più richiesta e tu sarai l'autentico protagonista del tuo lavoro:
+        la tua bravura farà la differenza e potrai affermarti in tutti gli ambiti che vedono in primo piano una figura professionale
+        del tuo calibro. Sarai in grado di gestire colazioni, pranzi e cene per i clienti del tuo ristorante, sarai il fiore
+        all'occhiello del made in Italy all'estero, il riferimento nel tuo entourage in cucina, il maestro che conferisce
+        unicità ad ogni portata! Questo Corso forma cuochi che se vorranno, se avranno la possibilità e la fortuna, potranno
+        diventare Chef. Con Il Corso di Formazione per Cuoco Professionista ti prepari con il piacere di entrare in un un
+        ambito professionale che non conosce crisi! La figura del Cuoco Professionista è sempre più richiesta in Italia,
+        dove è anche una vera e propria icona nazionale, e all'estero, dove questa figura rimane un vanto per ogni locale
+        che si rispetti. Questo corso ti darà la possibilità di mostrare di che pasta sei fatto, di crescere professionalmente
+        e di affermarti nel mondo del lavoro in Italia e all'estero, di fare nuove esperienze e arricchire il tuo bagaglio
+        personale.
+      </h3>
+    </mat-card-content>
+  </mat-card>
+</div>

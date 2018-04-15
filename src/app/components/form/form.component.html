@@ -1,0 +1,35 @@
+<mat-card class="flex-container">
+<form [formGroup]='personalData' class="card">
+    <mat-form-field>
+        <input matInput placeholder="Nome" [formControl]="personalData.controls['firstName']" required>
+        <mat-error *ngIf="personalData.controls['firstName'].hasError('required')">il nome è richiesto</mat-error>
+        <mat-icon matSuffix color="warn">face</mat-icon>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Cognome"  [formControl]="personalData.controls['lastName']" required>
+          <mat-error *ngIf="personalData.controls['lastName'].hasError('required')">il cognome è richiesto</mat-error>
+          <mat-icon matSuffix color="warn">account_box</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="email" type="email"  [formControl]="personalData.controls['email']"
+              required>
+            <mat-error *ngIf="personalData.controls['email'].hasError('email')">
+              Please enter a valid email address
+            </mat-error>
+            <mat-icon matSuffix color="warn">email</mat-icon>
+          </mat-form-field>
+          <mat-form-field>
+              <span matPrefix>+39 &nbsp;</span>
+              <input matInput #number maxlength=10 placeholder="numero di cellulare" type="tel" [formControl]="personalData.controls['number']"
+                required>
+              <mat-hint align="end">{{number.value.length}} / 10</mat-hint>
+              <mat-error *ngIf="personalData.controls['number'].hasError('pattern')">devono essere inseriti solo caratteri numerici</mat-error>
+              <mat-error *ngIf="personalData.controls['number'].hasError('required')">il numero di telefono è richiesto</mat-error>
+              <mat-icon matSuffix color="warn">phone</mat-icon>
+            </mat-form-field>
+            <button mat-raised-button color='warn' type="submit" (click)="onSubmit(personalData.value)"  [disabled]="!personalData.valid">richiedi informazioni</button>
+</form>
+</mat-card>
+<div *ngIf="personalData.valid">
+<p>Form value: {{ personalData.value | json }}</p>
+</div>
