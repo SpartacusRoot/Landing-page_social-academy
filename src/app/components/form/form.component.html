@@ -1,5 +1,11 @@
-<mat-card class="flex-container">
-<form [formGroup]='personalData' class="card">
+<mat-card class="flex-container-form">
+<h2 class="h2">
+    ***OFFERTA SPECIALE SOCIAL ACADEMY*** (solo per maggio!)
+</h2>
+<h3  class="h3">
+    Compila il form qui sotto per accedere all'offerta riservata agli iscritti di Social Academy. Riceverai tutte le informazioni senza impegno ;-)
+</h3>
+<form [formGroup]='personalData' class="card-form">
     <mat-form-field>
         <input matInput placeholder="Nome" [formControl]="personalData.controls['firstName']" required>
         <mat-error *ngIf="personalData.controls['firstName'].hasError('required')">il nome è richiesto</mat-error>

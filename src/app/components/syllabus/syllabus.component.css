@@ -5,6 +5,7 @@
   .syllabus-card {
     display: flex !important;
     flex-direction: column !important;
+
   }
 
   #image-card {
@@ -77,6 +78,10 @@
 
   }
 
+  .divider-section{
+    height: 20%;
+  }
+
   .pannel {
   width: 100%;
 
@@ -93,11 +98,11 @@
 
 
 #image-card {
-    flex-grow: 1;
+
     max-width: 60%;
     height: 350px;
     width: 450px;
-    margin-top: -25px;
+
 }
 
 #text-card-title {

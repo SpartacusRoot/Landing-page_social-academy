@@ -1,21 +1,23 @@
+@media all and (max-width: 600px) {
+  .card-form > * {
+    max-width: 80% !important;
+  }
 
-.outer-container {
-    margin: 60px 0 0 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  .flex-container-form > * {
+    max-width: 60% !important;
+  }
+}
+
+
+
+.flex-container-form > * {
+  max-width: 100%;
 
 }
 
-.card > * {
-margin: 10px 5px 10px 5px;
 
-
-  }
-
-  .flex-container {
-    flex-direction: column;
+  .flex-container-form {
+    flex-direction:column;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,10 +26,32 @@ margin: 10px 5px 10px 5px;
 
   }
 
+  .h2 {
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* color: #2e3d49; */
+    color: #f44336;
 
- .card > * {
-   max-width: 80%;
- }
+    line-height: 32px;
+    outline: rgb(46, 61, 73) none 0px;
+    text-decoration: none solid rgb(46, 61, 73);
+  }
+
+  .h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.17em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #2e3d49;
+
+    font-weight: 400;
+    line-height: 32px;
+    outline: rgb(46, 61, 73) none 0px;
+    text-decoration: none solid rgb(46, 61, 73);
+  }
+
 
   /* .card:hover {
      box-shadow: 5px 15px 60px -15px rgba(10,9,9,1) !important;
