@@ -59,7 +59,8 @@ detailsTwo = [
     const dialog = this.dialog.open( VideoDialogComponent, {
       height: '520px',
       width: '720px',
-      hasBackdrop: true
+      hasBackdrop: true,
+      panelClass: 'screen-dialog',
     });
 
   }
