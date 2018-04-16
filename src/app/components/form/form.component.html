@@ -26,7 +26,7 @@
           </mat-form-field>
           <mat-form-field>
               <span matPrefix>+39 &nbsp;</span>
-              <input matInput #number maxlength=10 placeholder="numero di cellulare" type="tel" [formControl]="personalData.controls['number']"
+              <input matInput class="tel" #number maxlength=10 placeholder="numero di cellulare" type="tel" [formControl]="personalData.controls['number']"
                 required>
               <mat-hint align="end">{{number.value.length}} / 10</mat-hint>
               <mat-error *ngIf="personalData.controls['number'].hasError('pattern')">devono essere inseriti solo caratteri numerici</mat-error>

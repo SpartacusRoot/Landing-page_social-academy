@@ -122,6 +122,11 @@ margin-bottom: 20%;
   margin-bottom: 6%;
 }
 
+#h3-v {
+  text-align: center !important;
+  color: #f44336 !important;
+}
+
 .list-text {
   color: #2e3d49;
   font-size: 0.43em;
